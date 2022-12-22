@@ -125,7 +125,8 @@ change_hostname() {
 
 # Check Tor configs
 mac_change() {
-	iface=$(iw dev | awk '/Interface/ {interf=$2} END {print interf}')
+	iface=$(ip addr show scope global | grep inet | awk '/noprefixroute/ {noprefixroute=$9} END {print noprefixroute}'
+)
 	gammelmac=$(cat /sys/class/net/$iface/address)
 	sudo systemctl stop NetworkManager.service
 	sudo macchanger -r "$iface"
@@ -473,7 +474,8 @@ do_stop() {
 do_status() {
 
 	echo "$cy \n[i] Viser anonym status\n $cf"
-	interfaces=$(iw dev | awk '/Interface/ {interf=$2} END {print interf}')
+	interfaces=$(ip addr show scope global | grep inet | awk '/noprefixroute/ {noprefixroute=$9} END {print noprefixroute}'
+)
 	ifconfig -a | grep "encap:$interfaces" | awk '{print " * " $1, $5}'
 
 	CURRENT_HOSTNAME=$(hostname)

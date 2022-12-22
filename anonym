@@ -497,11 +497,11 @@ do_status() {
 do_update() {
 
 	echo "\n[i] Updating ...\n"
-	git clone https://github.com/ubunknown0/anonym
-	cd anonym
+	git clone https://github.com/ubunknown1/ko-anonym
+	cd ko-anonym
 	sh setup.sh
 	cd ..
-	rm -rf anonym
+	rm -rf ko-anonym
 	echo "Updated!"
 
 }
@@ -521,7 +521,7 @@ case "$1" in
 		do_update
 	;;
 	*)
-		echo "Usage: sudo $0 {start|stop|status|update}" >&2
+		echo "Bruk: sudo $0 {start|stop|status|update}" >&2
 		exit 3
 	;;
 esac

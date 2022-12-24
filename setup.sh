@@ -17,7 +17,7 @@ case $tor in
        	* ) echo "Du trykket ikke på y eller n! Idiot"; break;;
 esac;
 read -p "vil du intallere MacChanger? [Y/n] " macchanger
-case $tor in
+case $macchanger in
 	[Nn]* ) apt install macchanger -y; break;;
 	[Yy]* ) break;;
         * ) echo "Du trykket ikke på y eller n! Idiot"; break;;

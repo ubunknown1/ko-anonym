@@ -10,13 +10,13 @@ apt update
 echo ""
 echo "[+] System er oppdatert !"
 echo ""
-read -p "Er Tor Installert? [Y/n] (N hvis du er usikker) " tor
+read -p "vil du Installere TOR? [Y/n] " tor
 case $tor in
-	[Nn]* ) apt install tor -y; break;;
-	[Yy]* ) break;;
+	[Yy]* ) apt install tor -y; break;;
+	[Nn]* ) break;;
        	* ) echo "Du trykket ikke på y eller n! Idiot"; break;;
 esac;
-read -p "Er MacChanger Installert? [Y/n] (N hvis du er usikker) " tor
+read -p "vil du intallere MacChanger? [Y/n] " macchanger
 case $tor in
 	[Nn]* ) apt install macchanger -y; break;;
 	[Yy]* ) break;;

@@ -2,4 +2,4 @@
 
 sudo ./setup.sh for install
 
-sudo anonym start / stop / restart
+sudo anonym start / stop / restart / update

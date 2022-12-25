@@ -1,12 +1,9 @@
 # ko-anonym
 
-# FOR INSTALLASJON
+# for å installere ko-anonym
 make build
 make install
 
-
-####################################################
-
-# FOR BRUK
+# for å bruke anonym
 
 sudo anonym start / stop / restart / update

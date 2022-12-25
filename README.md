@@ -1,5 +1,12 @@
 # ko-anonym
 
-sudo ./setup.sh for install
+        FOR INSTALLASJON
+make build
+make install
+
+
+####################################################
+
+        FOR BRUK
 
 sudo anonym start / stop / restart / update

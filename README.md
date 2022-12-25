@@ -1,12 +1,12 @@
 # ko-anonym
 
-        FOR INSTALLASJON
+# FOR INSTALLASJON
 make build
 make install
 
 
 ####################################################
 
-        FOR BRUK
+# FOR BRUK
 
 sudo anonym start / stop / restart / update

@@ -6,7 +6,7 @@ help: # Viser hjelp for hver Makefile commando.
 
 .PHONY: install
 install: # Installerer nødvendige program.
-	sudo apt install -y tor macchanger curl
+	sudo apt install -y tor macchanger curl virt-what
 
 
 .PHONY: build
